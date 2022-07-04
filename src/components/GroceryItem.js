@@ -3,11 +3,13 @@ const GroceryItem = (props) => {
 
   return (
     <div onClick={() => props.addToCart(props.item)}>
-      <h3>Item: {item}</h3>
-      <p>Brand: {brand}</p>
-      <p>Units: {units}</p>
-      <p>Quantity: {quantity}</p>
-      <p>Purchased: {isPurchased + ""}</p>
+      <h3 className="item">Item: {item}</h3>
+      <div className="info-bar">
+        <p className="brand">Brand: {brand} |</p>
+        <p className="units">Units: {units} |</p>
+        <p className="quantity">Quantity: {quantity} |</p>
+        <p className="purchased">Purchased: {isPurchased + ""}</p>
+      </div>
     </div>
   );
 };

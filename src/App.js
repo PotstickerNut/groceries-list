@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Grocery App</h1>
+        <h1 className="title">Grocery App</h1>
         <NewItemForm
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}

@@ -1,6 +1,6 @@
 const NewItemForm = (props) => {
   return (
-    <form onSubmit={props.handleSubmit}>
+    <form onSubmit={props.handleSubmit} className="form">
       <label htmlFor="item">Item</label>
       <input
         type="text"
@@ -8,7 +8,6 @@ const NewItemForm = (props) => {
         onChange={props.handleChange}
         id="item"
       />
-      <br />
       <label htmlFor="brand">Brand</label>
       <input
         type="text"
@@ -24,7 +23,6 @@ const NewItemForm = (props) => {
         onChange={props.handleChange}
         id="units"
       />
-      <br />
       <label htmlFor="quantity">Quantity</label>
       <input
         type="number"
